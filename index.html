@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teo Lapper, Ling - Professional Profile</title>
+    <style>
+        /* Base Page Setup */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #2d3748; 
+            background-color: #f7fafc; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+        }
+
+        /* Executive Canvas Card */
+        .portfolio-canvas {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Header Architecture */
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #1a202c;
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+        }
+        
+        .header-titles h1 { 
+            margin: 0 0 8px 0; 
+            text-transform: uppercase; 
+            font-size: 2.2rem;
+            letter-spacing: 0.5px;
+            color: #1a202c;
+        }
+        
+        .contact-links { 
+            font-size: 0.9rem; 
+            color: #4a5568;
+        }
+        
+        .contact-links a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .avatar { 
+            width: 120px; 
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%; 
+            border: 2px solid #e2e8f0;
+        }
+
+        /* Section Block Architecture (The Flexbox Columns) */
+        .section-block {
+            display: flex;
+            margin-top: 35px;
+            padding-top: 15px;
+        }
+
+        .section-title {
+            width: 25%;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #1a202c;
+            letter-spacing: 0.5px;
+            padding-right: 20px;
+        }
+
+        .section-content {
+            width: 75%;
+            border-left: 1px solid #e2e8f0;
+            padding-left: 30px;
+        }
+
+        /* Entry Layouts (Split Column Data) */
+        .entry {
+            margin-bottom: 30px;
+        }
+        .entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .entry-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .entry-main {
+            font-weight: 700;
+            color: #1a202c;
+            font-size: 1.05rem;
+        }
+
+        .entry-meta {
+            font-size: 0.9rem;
+            color: #718096;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .entry-sub {
+            font-style: italic;
+            color: #4a5568;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        /* Lists & Paragraphs */
+        p {
+            margin: 0 0 10px 0;
+            color: #4a5568;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            color: #4a5568;
+        }
+
+        strong {
+            color: #1a202c;
+        }
+
+        /* Responsive Mobile Layout (Stacks everything nicely on phones) */
+        @media (max-width: 768px) {
+            .main-header { flex-direction: column-reverse; text-align: center; }
+            .avatar { margin-bottom: 15px; }
+            .section-block { flex-direction: column; }
+            .section-title { width: 100%; padding-right: 0; margin-bottom: 15px; }
+            .section-content { width: 100%; border-left: none; padding-left: 0; }
+            .entry-row { flex-direction: column; }
+            .entry-meta { text-align: left; margin-top: 2px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="portfolio-canvas">
+
+    <!-- Header Section -->
+    <div class="main-header">
+        <div class="header-titles">
+            <h1>Teo Lapper, Ling</h1>
+            <div class="contact-links">
+                +43 6605505622 &nbsp;|&nbsp; sgpodia@gmail.com <br>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> &nbsp;|&nbsp; 
+                <a href="https://lingteo.github.io/">Portfolio</a>
+            </div>
+        </div>
+        <!-- This line automatically grabs your uploaded avatar.jpg file -->
+        <img src="avatar.jpg" alt="Teo Lapper, Ling" class="avatar">
+    </div>
+
+    <!-- Profile Section -->
+    <div class="section-block">
+        <div class="section-title">Profile</div>
+        <div class="section-content">
+            <p>An enterprising and results-driven Business Director and Founder who recently graduated from FH Kufstein with a Master's degree in International Business Studies, achieving a final semester GPA of 1.33. Specialized in bridging traditional enterprise management with cutting-edge digital transformation, ESG integration, and responsible AI implementation, with a proven track record of orchestrating multi-million-dollar multinational accounts, navigating cross-cultural frameworks, and designing innovative organizational strategies for sustainable growth.</p>
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section-block">
+        <div class="section-title">Education</div>
+        <div class="section-content">
+            <div class="entry">
+                <div class="entry-row">
+                    <span class="entry-main">FH Kufstein</span>
+                    <span class="entry-meta">Austria &nbsp;|&nbsp; Oct 2024 - July 2026</span>
+                </div>
+                <div class="entry-sub">Master of Arts in Business (MA), International Business Studies (GPA: 1.33 in final semester)</div>
+                <ul>
+                    <li><strong>Digital Transformation & AI Integration:</strong> Developed frameworks for evaluating organisational readiness and applying artificial intelligence models to solve real-world business challenges.</li>
+                    <li><strong>Sustainability & ESG:</strong> Analysed the economic and societal impact of sustainable practices, focusing on integrating ESG criteria into corporate strategy and strategic change management.</li>
+                </ul>
+            </div>
+            
+            <div class="entry">
+                <div class="entry-row">
+                    <span class="entry-main">National University of Singapore (NUS)</span>
+                    <span class="entry-meta">Singapore &nbsp;|&nbsp; Jan 1995 - Jan 1999</span>
+                </div>
+                <div class="entry-sub">Bachelor of Science (Building and Estate Management), specializing in Building</div>
+                <ul>
+                    <li>Accredited with Second-Class Honours, Upper Division.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="section-block">
+        <div class="section-title">Experience</div>
+        <div class="section-content">
+            <div class="entry">
+                <div class="entry-row">
+                    <span class="entry-main">POD i+a Pte Ltd</span>
+                    <span class="entry-meta">Singapore &nbsp;|&nbsp; May 2003 – Nov 2021</span>
+                </div>
+                <div class="entry-sub">Founder</div>
+                <ul>
+                    <li><strong>Strategic Leadership & Expansion:</strong> Founded and led the company for over 20 years, successfully transforming a boutique design studio into a market-leading interior design and design-and-build firm.</li>
+                    <li><strong>Business Development & Growth:</strong> Spearheaded business management and growth strategies to expand market reach, securing and delivering high-value projects for diverse clients across multiple industries.</li>
+                    <li><strong>Team & Culture Cultivation:</strong> Established a strong organizational culture centered on innovation, collaboration, and quality; mentor and empower a diverse team of design and construction professionals to deliver high-caliber solutions.</li>
+                    <li><strong>Client-Centric & Sustainable Solutions:</strong> Oversee the end-to-end delivery of creative, inspiring, and sustainable spaces engineered to maximize client well-being and productivity.</li>
+                    <li><strong>Visionary Execution:</strong> Combine a passion for design, strategic business management, and social impact to drive continuous improvement and navigate complex industry challenges.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-row">
+                    <span class="entry-main">Franzissi (Eltern-Kind-Zentrum Schwaz)</span>
+                    <span class="entry-meta">Schwaz, Austria &nbsp;|&nbsp; Nov 2021 – Aug 2024</span>
+                </div>
+                <div class="entry-sub">Native Englisch Speakerin</div>
+                <ul>
+                    <li>Supported educational and childcare activities, including daily group routines, child observation, and creating a positive learning environment.</li>
+                    <li>Communicated effectively in English with children, parents, and team members while assisting with events and group activities.</li>
+                    <li>Collaborated with colleagues in team meetings, training sessions, and planning activities to ensure smooth daily operations.</li>
+                    <li>Maintained hygiene, safety, and organizational standards, including care of materials, facilities, and administrative responsibilities.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research & Innovation Section -->
+    <div class="section-block">
+        <div class="section-title">Research & Projects</div>
+        <div class="section-content">
+            <div class="entry">
+                <div class="entry-row">
+                    <span class="entry-main">Master’s Thesis | FH Kufstein Tirol</span>
+                    <span class="entry-meta">Primary Evaluation: 91/100 (Grade 1 – Excellent)</span>
+                </div>
+                <div class="entry-sub">“Institutionalising responsible AI in commercial real estate”</div>
+                <ul>
+                    <li><strong>Methodological Execution:</strong> Delivered a solid master thesis, praised by primary evaluator Prof. Dr. Roman Stöger for its complex, carefully executed qualitative case study, navigating AI-ESG implementation frameworks.</li>
+                    <li><strong>Practical Innovation:</strong> Developed an original application model, with clear logical structure, actionable findings and practical relevance.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-row">
+                    <span class="entry-main">POD i+a Pte Ltd (Key Deliverables)</span>
+                    <span class="entry-meta">Enterprise Highlights</span>
+                </div>
+                <ul>
+                    <li>Alteration and addition works, including M&E services, structured cabling solutions and move management for United Airlines at Anson Road, 1000m².</li>
+                    <li>Design consultancy services for McDonald Singapore office, 4500 m².</li>
+                    <li>Design and build services, including M&E services and structured cabling solutions for Tata Consultancy and Schneider Electric at Changi Business Park, 5000m² and 1000m² respectively.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section-block">
+        <div class="section-title">Skills & Interests</div>
+        <div class="section-content">
+            <ul>
+                <li><strong>Written and Spoken Languages:</strong> English, Chinese/Mandarin, German ÖSD B2, Business German B1-B2.</li>
+                <li><strong>Computer Knowledge:</strong> Word, Excel, Powerpoint, Project and Outlook / Adobe In-design.</li>
+                <li><strong>Hobbies:</strong> Yoga and Tennis.</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
